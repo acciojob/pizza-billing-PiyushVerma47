@@ -25,7 +25,7 @@ public class Pizza {
         // your code goes here
         if(!isCheeseAdded){
             isCheeseAdded = true;
-            System.out.println("Extra Cheese Added: 80");
+            bill = bill + "Extra Cheese Added: 80\n";
             price+=80;
         }
     }
@@ -35,11 +35,11 @@ public class Pizza {
         if(!isToppingsAdded){
             isToppingsAdded = true;
             if(isVeg){
-                System.out.println("Extra Toppings Added: 70");
+                bill = bill + "Extra Toppings Added: 70\n";
                 price+=70;
             }
             else{
-                System.out.println("Extra Toppings Added: 120");
+                bill = bill + "Extra Toppings Added: 120\n";
                 price+=120;
             }
         }
@@ -48,7 +48,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(!isTakeaway){
-            System.out.println("Paper bag Price = 20");
+            bill = bill + "Paper bag Price = 20\n";
             price+=20;
             isTakeaway = true;
         }
