@@ -54,7 +54,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(!isTakeaway){
-            bill = bill + "Paper bag Price: 20\n";
+            bill = bill + "Paperbag Added: 20\n";
             price+=20;
             isTakeaway = true;
         }
