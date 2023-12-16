@@ -13,8 +13,14 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
-        if(isVeg) price=300;
-        else price=400;
+        if(isVeg) {
+            bill = "Veg pizza base price = 300\n";
+            price = 300;
+        }
+        else {
+            bill = "Non-veg pizza base price = 400\n";
+            price = 400;
+        }
     }
 
     public int getPrice(){
