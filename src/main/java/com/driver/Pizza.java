@@ -14,11 +14,11 @@ public class Pizza {
         this.isVeg = isVeg;
         // your code goes here
         if(isVeg) {
-            bill = "Veg pizza base price = 300\n";
+            bill = "Base Price Of The Pizza: 300\n";
             price = 300;
         }
         else {
-            bill = "Non-veg pizza base price = 400\n";
+            bill = "Base Price Of The Pizza: 400\n";
             price = 400;
         }
     }
@@ -54,7 +54,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(!isTakeaway){
-            bill = bill + "Paper bag Price = 20\n";
+            bill = bill + "Paper bag Price: 20\n";
             price+=20;
             isTakeaway = true;
         }
