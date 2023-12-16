@@ -12,6 +12,8 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
+        if(isVeg) price+=300;
+        else price+=400;
     }
 
     public int getPrice(){
