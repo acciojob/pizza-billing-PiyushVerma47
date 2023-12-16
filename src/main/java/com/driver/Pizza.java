@@ -8,6 +8,7 @@ public class Pizza {
     private boolean isCheeseAdded;
     private boolean isToppingsAdded;
     private boolean isTakeaway;
+    private boolean isBillGenerated;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -55,7 +56,11 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        String bill = "Total Price: "+price+"\n";
+        if(isBillGenerated==false)
+        {
+            bill+="Total Price: "+price+"\n";
+            isBillGenerated=true;
+        }
         return bill;
     }
 }
