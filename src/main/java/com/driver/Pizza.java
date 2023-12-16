@@ -12,8 +12,8 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
-        if(isVeg) price+=300;
-        else price+=400;
+        if(isVeg) price=300;
+        else price=400;
     }
 
     public int getPrice(){
@@ -55,7 +55,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        String bill = "Total Price: "+price;
+        String bill = "Total Price: "+price+"\n";
         return bill;
     }
 }
